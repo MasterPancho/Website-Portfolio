@@ -1,0 +1,36 @@
+name: Node Continuous Integration
+
+on:
+    #Triggered whenever a pull request on the master branch is opened, updated, reopened
+    pull_request:                        
+        branches: [master]
+
+jobs:
+    test_pull_request:
+
+        #Job will run in and ubuntu VM in Github Actions
+        runs-on: ubuntu-latest                                  
+        
+        steps:
+            #Downloads the code in the repository needed for the workflow into the Github Actions directory
+            - name: Checkout Repository
+              uses: actions/checkout@v3                         
+
+            #Installs Node.js version 20 on the runner
+            - name: Setup Node.js
+              uses: actions/setup-node@v3                       
+              with:
+                node-version: 20
+            
+            #Installs all project dependencies defined in package.json.
+            - name: Install Dependencies                
+              run: npm install --legacy-peer-deps   
+            
+            #Executes the test script defined in package.json.
+            - name: Run Tests
+              run: npm test
+
+            #Executes the build script defined in package.json.
+            - name: Build the Application
+              run: npm run build
+            
