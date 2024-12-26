@@ -22,9 +22,9 @@ const ServiceCard = ({ index, title, icon }) => {
             scale:1,
             speed:450
           }}
-          className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"   //Adds dark colour, adjusts and centers images and text
+          className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[300px] flex justify-evenly items-center flex-col"   //Adds dark colour, adjusts and centers images and text
         >
-          <img src={icon} alt={title} className="w-16 h-16 object-contain"/>                          {/*Adds images + adjusts its size*/}          
+          <img src={icon} alt={title} className="w-28 h-28 object-contain"/>                          {/*Adds images + adjusts its size*/}          
           <h3 className="text-white text-[20px] font-bold text-center">{title}</h3>                   {/*Adds text + adjusts its size*/}     
         </div>
       </motion.div>
@@ -47,9 +47,8 @@ const About = () => {
       variants={fadeIn("", "", 0.1, 1)}                                                 //Allows for the text to appear after the title               
       className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"              //Adjusts the text size and line height
       >
-        I am a Software Engineer with a passion for _______ and solving complex problems.  
-        I have a strong foundation in computer science and software engineering principles. 
-        I am a quick learner and a team player who is always eager to learn new things and work on challenging projects.
+        I am a third-year Software Engineering student at Toronto Metropolitan University, 
+        whose passion for technology innovation has been the driving force behind my pursuit of this career. 
       </motion.p>
       
       {/*Invokes the cards*/}

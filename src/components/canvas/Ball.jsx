@@ -34,6 +34,7 @@ const Ball = (props) => {
           rotation={[2*Math.PI, 0, 6.25]}
           flatShading
           map={decal}
+          scale={0.7}
         />
       </mesh>
     
