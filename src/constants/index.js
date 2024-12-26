@@ -1,19 +1,18 @@
 import {
     mobile,
     backend,
+    gpa,
     creator,
     web,
     javascript,
-    typescript,
     html,
     css,
     reactjs,
-    redux,
     tailwind,
     nodejs,
-    mongodb,
     git,
-    figma,
+    github,
+    github_dark,
     docker,
     meta,
     starbucks,
@@ -23,6 +22,20 @@ import {
     jobit,
     tripguide,
     threejs,
+    cpp,
+    c,
+    java ,
+    kubernetes,
+    linux,
+    office,
+    powershell,
+    python,
+    sql,
+    ubuntu,
+    vite,
+    vscode,
+    vstudio,
+
   } from "../assets";
   
   export const navLinks = [
@@ -42,78 +55,106 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Software Developer",
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "",
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "",
       icon: backend,
     },
     {
-      title: "Content Creator",
-      icon: creator,
+      title: "GPA: 3.80/4.00",
+      icon: gpa,
     },
   ];
   
   const technologies = [
-    {
-      name: "HTML 5",
-      icon: html,
-    },
-    {
-      name: "CSS 3",
-      icon: css,
-    },
+    // {
+    //   name: "CSS 3",
+    //   icon: css,
+    // },
+    // {
+    //   name: "HTML 5",
+    //   icon: html,
+    // },
     {
       name: "JavaScript",
       icon: javascript,
-    },
-    {
-      name: "TypeScript",
-      icon: typescript,
     },
     {
       name: "React JS",
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
-    {
-      name: "Tailwind CSS",
-      icon: tailwind,
-    },
-    {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
       name: "Three JS",
       icon: threejs,
     },
+    {
+      name: "C++",
+      icon: cpp,
+    },
+    {
+      name: "java",
+      icon: java,
+    },
+    {
+      name: "python",
+      icon: python,
+    },
+    {
+      name: "sql",
+      icon: sql,
+    },
+    {
+      name: "powershell",
+      icon: powershell,
+    },
+
+    // {
+    //   name: "Kubernetes",
+    //   icon: kubernetes,
+    // },
+  ];
+  
+  const environments = [
+    // {
+    //   name: "Node JS",
+    //   icon: nodejs,
+    // },
     {
       name: "git",
       icon: git,
     },
     {
-      name: "figma",
-      icon: figma,
-    },
-    {
       name: "docker",
       icon: docker,
     },
+    // {
+    //   name: "github",
+    //   icon: github_dark,
+    // },
+    {
+      name: "linux",
+      icon: linux,
+    },
+    {
+      name: "office",
+      icon: office,
+    },
+    {
+      name: "Visual Code",
+      icon: vscode,
+    },
+    // {
+    //   name: "Visual Studio",
+    //   icon: vstudio,
+    // },
   ];
-  
+
   const experiences = [
     {
       title: "React.js Developer",
@@ -262,5 +303,5 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, environments, experiences, testimonials, projects };
   
