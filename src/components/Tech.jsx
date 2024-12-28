@@ -20,10 +20,15 @@ const Tech = () => {
 
       <div className="flex flex-col items-center gap-5">
         <h1 className={`${styles.sectionHeadText} !text-[#915eff] text-[#915eff]`}>Environments</h1>
-        <div className="flex flex-row flex-wrap justify-center gap-12 w-[450px]">
+        <div className="flex flex-row flex-wrap justify-center gap-16 w-[450px]">
         {environments.map((environment) => (
-          <div className="w-28 h-28" key={environment.name}>
-            <BallCanvas icon={environment.icon}/>
+          <div className="w-24 h-24 bg-white p-2 rounded-[100px] flex items-center justify-center" key={environment.name}>
+            {/* <BallCanvas icon={environment.icon}/> */}
+            <img
+              src={environment.icon}
+              alt={environment.name}
+              className="h-14 w-14 object-contain"
+            />
           </div>
         ))}
         </div>
