@@ -1,11 +1,8 @@
 import {
-    mobile,
     graduation,
     backend,
     softdev,
     gpa,
-    creator,
-    web,
     javascript,
     html,
     css,
@@ -35,6 +32,7 @@ import {
     vite,
     vscode,
     vstudio,
+    ieee,
 
   } from "../assets";
   
@@ -185,6 +183,24 @@ import {
     },
   ];
   
+  const achievements = [
+    {
+      name:"IEEE CSTMC’s 2023-2024 Software Fundamentals Workshop",
+      description: "",
+      image: ieee,
+    },
+    {
+      name:"IEEE CSTMC’s 2023-2024 Software Fundamentals Workshop",
+      description: "",
+      image: ieee,
+    },
+    {
+      name:"IEEE CSTMC’s 2023-2024 Software Fundamentals Workshop",
+      description: "",
+      image: ieee,
+    },
+  ];
+
   const testimonials = [
     {
       testimonial:"",
@@ -261,5 +277,5 @@ import {
     },
   ];
   
-  export { services, technologies, environments, experiences, testimonials, projects };
+  export { services, technologies, environments, experiences, achievements, testimonials, projects };
   
