@@ -3,6 +3,7 @@ import backend from "./backend.png";
 import gpa from "./gpa.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
+import graduation from "./graduation.png"
 import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
@@ -47,6 +48,7 @@ export {
   gpa,
   creator,
   mobile,
+  graduation,
   web,
   github,
   github_dark,

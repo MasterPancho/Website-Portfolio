@@ -17,7 +17,7 @@ const Hero = () => {
         {/*Title and subtext with a predefined style in styles.js*/}
         <div>
           <h1 className={`${styles.heroHeadText}`}>Hello, I am <span className="text-[#915eff]"> Miguel </span></h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}> A third year Software Engineer Student 
+          <p className={`${styles.heroSubText} mt-2 text-white-100`}> A 4th year Software Engineer Student 
             <br className="sm:block hidden"/> currently on a Software Analyst Internship 
           </p>
         </div>
