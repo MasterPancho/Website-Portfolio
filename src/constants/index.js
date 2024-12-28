@@ -1,5 +1,6 @@
 import {
     mobile,
+    graduation,
     backend,
     gpa,
     creator,
@@ -59,8 +60,8 @@ import {
       icon: web,
     },
     {
-      title: "",
-      icon: mobile,
+      title: "Graduation: May 2026",
+      icon: graduation,
     },
     {
       title: "",
