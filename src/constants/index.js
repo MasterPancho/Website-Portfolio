@@ -15,8 +15,8 @@ import {
     docker,
     jays,
     hitachi,
-    carrent,
-    jobit,
+    atari,
+    bookstore,
     tripguide,
     threejs,
     cpp,
@@ -226,46 +226,42 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Atari Pong Game",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "A 1v1 multiplayer game, where each player must hit the ball with a racket aiming to score points. This game incorporates mechanics including collision detection, racket control, and a scoring system.",
       tags: [
         {
-          name: "react",
+          name: "python",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "pycharm",
           color: "green-text-gradient",
         },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: atari,
+      source_code_link: "https://github.com/MasterPancho/Atari-Pong-Game/tree/main",
     },
     {
-      name: "Job IT",
+      name: "Bookstore Application",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "An application with functionalities for administrators and customers. Logging in as an admin enables the addition or removal of books and customers from the app. In contrast, logging in as a customer allows for purchasing books only.",
       tags: [
         {
-          name: "react",
+          name: "java",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "netbeans",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "javafx",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: bookstore,
+      source_code_link: "https://github.com/MasterPancho/Book-Store-Application/tree/main",
     },
     {
       name: "Trip Guide",

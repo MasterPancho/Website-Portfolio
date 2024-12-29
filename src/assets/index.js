@@ -34,8 +34,8 @@ import vstudio from "./tech/vstudio.png";
 import jays from "./company/jays.png";
 import hitachi from "./company/hitachi.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
+import atari from "./works/atari.png";
+import bookstore from "./works/bookstore.png";
 import tripguide from "./tripguide.png";
 
 import ieee from "./achievements/ieee.png"
@@ -61,8 +61,8 @@ export {
   threejs,
   jays,
   hitachi,
-  carrent,
-  jobit,
+  atari,
+  bookstore,
   tripguide,
   cpp,
   c,
