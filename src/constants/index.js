@@ -183,24 +183,37 @@ import {
     },
   ];
   
-  const achievements = [
+  const certificates = [
     {
       name:"IEEE CSTMC’s 2023-2024 Software Fundamentals Workshop",
-      description: "",
+      description: "Completed the IEEE CSTMC Software Fundamental Workshop",
       image: ieee,
     },
     {
-      name:"IEEE CSTMC’s 2023-2024 Software Fundamentals Workshop",
-      description: "",
-      image: ieee,
-    },
-    {
-      name:"IEEE CSTMC’s 2023-2024 Software Fundamentals Workshop",
-      description: "",
+      name:"C++ course",
+      description: "Completed 30hr course dealing with C++",
       image: ieee,
     },
   ];
 
+  const awards = [
+    {
+      name:"Dean's List",
+      description: "Nominated on the Dean's list for three consecutive years.",
+      image: ieee,
+    },
+    {
+      name:" Po Keith Achievement Award ",
+      description: "Nominated on the Dean's list for three consecutive years.",
+      image: ieee,
+    },
+    {
+      name:"Entrance Scholarship",
+      description: "Nominated on the Dean's list for three consecutive years.",
+      image: ieee,
+    },
+  ]
+  
   const testimonials = [
     {
       testimonial:"",
@@ -277,5 +290,5 @@ import {
     },
   ];
   
-  export { services, technologies, environments, experiences, achievements, testimonials, projects };
+  export { services, technologies, environments, experiences, certificates, awards, testimonials, projects };
   
