@@ -1,5 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
-import { About, Contact, Experience, Feedbacks, Hero, 
+import { About, Contact, Experience, Achievements, Feedbacks, Hero, 
   Navbar, Tech, Works, StarsCanvas } from './components';
 import herobg from './assets/herobg.webm'; // Import the video
 
@@ -28,7 +28,8 @@ const App = () => {
         <Experience />
         <Tech />
         <Works />
-        <Feedbacks />
+        <Achievements />
+        {/* <Feedbacks /> */}
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />

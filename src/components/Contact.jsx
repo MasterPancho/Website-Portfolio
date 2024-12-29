@@ -7,7 +7,7 @@ import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
 import Earth from './canvas/Earth';
 
-//Creates a 
+//Creates an email and sends it to mine.
 const Contact = () => {
   const formRef = useRef();                                   //A reference to the form object
   const [form, setForm] = useState({

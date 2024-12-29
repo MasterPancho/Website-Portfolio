@@ -1,10 +1,8 @@
 import {
-    mobile,
     graduation,
     backend,
+    softdev,
     gpa,
-    creator,
-    web,
     javascript,
     html,
     css,
@@ -15,10 +13,8 @@ import {
     github,
     github_dark,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
+    jays,
+    hitachi,
     carrent,
     jobit,
     tripguide,
@@ -36,6 +32,7 @@ import {
     vite,
     vscode,
     vstudio,
+    ieee,
 
   } from "../assets";
   
@@ -57,7 +54,7 @@ import {
   const services = [
     {
       title: "Software Developer",
-      icon: web,
+      icon: softdev,
     },
     {
       title: "Graduation: May 2026",
@@ -114,7 +111,6 @@ import {
       name: "powershell",
       icon: powershell,
     },
-
     // {
     //   name: "Kubernetes",
     //   icon: kubernetes,
@@ -122,10 +118,10 @@ import {
   ];
   
   const environments = [
-    // {
-    //   name: "Node JS",
-    //   icon: nodejs,
-    // },
+    {
+      name: "Node JS",
+      icon: nodejs,
+    },
     {
       name: "git",
       icon: git,
@@ -134,10 +130,10 @@ import {
       name: "docker",
       icon: docker,
     },
-    // {
-    //   name: "github",
-    //   icon: github_dark,
-    // },
+    {
+      name: "github",
+      icon: github_dark,
+    },
     {
       name: "linux",
       icon: linux,
@@ -150,91 +146,81 @@ import {
       name: "Visual Code",
       icon: vscode,
     },
-    // {
-    //   name: "Visual Studio",
-    //   icon: vstudio,
-    // },
+    {
+      name: "Visual Studio",
+      icon: vstudio,
+    },
   ];
 
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      title: "Usher",
+      company_name: "Toronto Blue Jays",
+      icon: jays,
+      iconBg: "#05255c",//#383E56",      
+      date: "Summer 2022; Summer 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Ensured a positive and safe environment for the fans by enforcing the stadium policies and procedures.", 
+        "Collaborated with staff to maintain crowd control, promptly resolve issues, and build a productive work environment.",
+        "Recognized for great performance with a Golden Pin in the 2022 season, and Employee of the Month in August 2023.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      title: "Software Analyst Internship",
+      company_name: "Hitachi Rail",
+      icon: hitachi,
+      iconBg: "#F2ECEB",
+      date: "June 2024 - Current",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Developed an OOP-based Python solution to configure and automate the setup of a device's DHCP server, enhancing reliability and improving user-friendliness. This tool significantly optimized workflows, as noted in client feedback.",
+        "Currently adapting my program to the Electron framework, shifting from Python to JavaScript, Node.js, and React.",
+        "Analyzed test data to identify and diagnose software issues, ensuring efficient troubleshooting and resolution.",
+        "Created PowerShell scripts to automate installation and application processes, improving time efficiency by 40%.",
+        "Conducted functional testing on C++ simulation software to ensure accurate and reliable real-time data processing.",
+        "Applied software engineering principles to real-world scenarios, adhering to company protocols and OOP standards.",
+        "Integrated C++ code with third-party software, ensuring seamless application performance and reliability.",
       ],
     },
   ];
   
+  const certificates = [
+    {
+      name:"IEEE CSTMC’s 2023-2024 Software Fundamentals Workshop",
+      description: "Completed the IEEE CSTMC Software Fundamental Workshop",
+      image: ieee,
+    },
+    {
+      name:"C++ course",
+      description: "Completed 30hr course dealing with C++",
+      image: ieee,
+    },
+  ];
+
+  const awards = [
+    {
+      name:"Dean's List",
+      description: "Nominated on the Dean's list for three consecutive years.",
+      image: ieee,
+    },
+    {
+      name:" Po Keith Achievement Award ",
+      description: "Nominated on the Dean's list for three consecutive years.",
+      image: ieee,
+    },
+    {
+      name:"Entrance Scholarship",
+      description: "Nominated on the Dean's list for three consecutive years.",
+      image: ieee,
+    },
+  ]
+  
   const testimonials = [
     {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+      testimonial:"",
+      name: "",
+      designation: "",
+      company: "",
+      image: "",
     },
   ];
   
@@ -304,5 +290,5 @@ import {
     },
   ];
   
-  export { services, technologies, environments, experiences, testimonials, projects };
+  export { services, technologies, environments, experiences, certificates, awards, testimonials, projects };
   

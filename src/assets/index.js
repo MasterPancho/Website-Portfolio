@@ -1,10 +1,8 @@
 import logo from "./logo.svg";
 import backend from "./backend.png";
+import softdev from "./softdev.png";
 import gpa from "./gpa.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import graduation from "./graduation.png"
-import web from "./web.png";
+import graduation from "./graduation.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
@@ -33,23 +31,21 @@ import vite from "./tech/vite.png";
 import vscode from "./tech/vscode.png";
 import vstudio from "./tech/vstudio.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import jays from "./company/jays.png";
+import hitachi from "./company/hitachi.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import ieee from "./achievements/ieee.png"
+
 export {
   logo,
   backend,
+  softdev,
   gpa,
-  creator,
-  mobile,
   graduation,
-  web,
   github,
   github_dark,
   menu,
@@ -63,10 +59,8 @@ export {
   reactjs,
   tailwind,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
+  jays,
+  hitachi,
   carrent,
   jobit,
   tripguide,
@@ -83,4 +77,5 @@ export {
   vite,
   vscode,
   vstudio,
+  ieee,
 };
