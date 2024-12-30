@@ -17,7 +17,7 @@ import {
     hitachi,
     atari,
     bookstore,
-    tripguide,
+    weather,
     threejs,
     cpp,
     c,
@@ -33,6 +33,12 @@ import {
     vscode,
     vstudio,
     ieee,
+    udemy,
+    stadiumstar,
+    pokeith,
+    dean2022,
+    dean2023,
+    dean2024,
 
   } from "../assets";
   
@@ -192,25 +198,35 @@ import {
     {
       name:"C++ course",
       description: "Completed 30hr course dealing with C++",
-      image: ieee,
+      image: udemy,
     },
   ];
 
   const awards = [
     {
-      name:"Dean's List",
-      description: "Nominated on the Dean's list for three consecutive years.",
-      image: ieee,
-    },
-    {
       name:" Po Keith Achievement Award ",
-      description: "Nominated on the Dean's list for three consecutive years.",
-      image: ieee,
+      description: "Award given to a second-year computer engineering student who has shown academic achievement and has obtained a minimum CGPA of 3.67.",
+      image: pokeith,
     },
     {
-      name:"Entrance Scholarship",
-      description: "Nominated on the Dean's list for three consecutive years.",
-      image: ieee,
+      name:"2021-2022 Dean's List",
+      description: "Award given to students who have achieved an overall GPA higher than 3.5 for the academic year.",
+      image: dean2022,
+    },
+    {
+      name:"2022-2023 Dean's List",
+      description: "Award given to students who have achieved an overall GPA higher than 3.5 for the academic year.",
+      image: dean2023,
+    },
+    {
+      name:"2023-2024 Dean's List",
+      description: "Award given to students who have achieved an overall GPA higher than 3.5 for the academic year.",
+      image: dean2024,
+    },
+    {
+      name:"Blue jays - Employee of the Month",
+      description: "Recognition for exceptional performance during the month in August 2023",
+      image: stadiumstar,
     },
   ]
   
@@ -264,25 +280,21 @@ import {
       source_code_link: "https://github.com/MasterPancho/Book-Store-Application/tree/main",
     },
     {
-      name: "Trip Guide",
+      name: "Weather Data Analysis",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "This program uses various functions to analyze daily surface data from the database of the National Oceanic and Atmospheric Administration.",
       tags: [
         {
-          name: "nextjs",
+          name: "c",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "geany",
           color: "green-text-gradient",
         },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: weather,
+      source_code_link: "https://github.com/MasterPancho/Weather-Data-Analysis/tree/main",
     },
   ];
   

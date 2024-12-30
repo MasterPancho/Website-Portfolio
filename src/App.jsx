@@ -18,8 +18,7 @@ const App = () => {
             muted
           ></video>
 
-          {/* Content on top of the video */}
-          <div className="relative z-10">
+          <div className="relative z-20">
             <Navbar />
             <Hero />
           </div>
@@ -28,7 +27,9 @@ const App = () => {
         <Experience />
         <Tech />
         <Works />
-        <Achievements />
+        <div className="relative z-10">
+          <Achievements />
+        </div>
         {/* <Feedbacks /> */}
         <div className="relative z-0">
           <Contact />

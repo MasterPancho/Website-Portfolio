@@ -36,9 +36,16 @@ import hitachi from "./company/hitachi.png";
 
 import atari from "./works/atari.png";
 import bookstore from "./works/bookstore.png";
-import tripguide from "./tripguide.png";
+import weather from "./works/weather.png";
 
-import ieee from "./achievements/ieee.png"
+import ieee from "./achievements/certificates/ieee.png"
+import udemy from "./achievements/certificates/udemy.png"
+
+import stadiumstar from "./achievements/awards/stadiumstar.png"
+import pokeith from "./achievements/awards/pokeith.png"
+import dean2022 from "./achievements/awards/dean2022.png"
+import dean2023 from "./achievements/awards/dean2023.png"
+import dean2024 from "./achievements/awards/dean2024.png"
 
 export {
   logo,
@@ -63,7 +70,7 @@ export {
   hitachi,
   atari,
   bookstore,
-  tripguide,
+  weather,
   cpp,
   c,
   java ,
@@ -78,4 +85,10 @@ export {
   vscode,
   vstudio,
   ieee,
+  udemy,
+  stadiumstar,
+  pokeith,
+  dean2022,
+  dean2023,
+  dean2024,
 };
