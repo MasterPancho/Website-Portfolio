@@ -1,6 +1,6 @@
 import {
+    language,
     graduation,
-    backend,
     softdev,
     gpa,
     javascript,
@@ -63,12 +63,12 @@ import {
       icon: softdev,
     },
     {
-      title: "Graduation: May 2026",
-      icon: graduation,
+      title: "English & Spanish",
+      icon: language,
     },
     {
-      title: "",
-      icon: backend,
+      title: "Graduation: May 2026",
+      icon: graduation,
     },
     {
       title: "GPA: 3.80/4.00",
@@ -77,29 +77,13 @@ import {
   ];
   
   const technologies = [
-    // {
-    //   name: "CSS 3",
-    //   icon: css,
-    // },
-    // {
-    //   name: "HTML 5",
-    //   icon: html,
-    // },
-    {
-      name: "JavaScript",
-      icon: javascript,
-    },
-    {
-      name: "React JS",
-      icon: reactjs,
-    },
-    {
-      name: "Three JS",
-      icon: threejs,
-    },
     {
       name: "C++",
       icon: cpp,
+    },
+    {
+      name: "C",
+      icon: c,
     },
     {
       name: "java",
@@ -114,31 +98,31 @@ import {
       icon: sql,
     },
     {
-      name: "powershell",
-      icon: powershell,
+      name: "JavaScript",
+      icon: javascript,
     },
-    // {
-    //   name: "Kubernetes",
-    //   icon: kubernetes,
-    // },
+    {
+      name: "HTML 5",
+      icon: html,
+    },
+    {
+      name: "React JS",
+      icon: reactjs,
+    },
   ];
   
   const environments = [
-    {
-      name: "Node JS",
-      icon: nodejs,
-    },
     {
       name: "git",
       icon: git,
     },
     {
-      name: "docker",
-      icon: docker,
-    },
-    {
       name: "github",
       icon: github_dark,
+    },
+    {
+      name: "powershell",
+      icon: powershell,
     },
     {
       name: "linux",
@@ -153,8 +137,12 @@ import {
       icon: vscode,
     },
     {
-      name: "Visual Studio",
-      icon: vstudio,
+      name: "docker",
+      icon: docker,
+    },
+    {
+      name: "Kubernetes",
+      icon: kubernetes,
     },
   ];
 
@@ -179,11 +167,11 @@ import {
       date: "June 2024 - Current",
       points: [
         "Developed an OOP-based Python solution to configure and automate the setup of a device's DHCP server, enhancing reliability and improving user-friendliness. This tool significantly optimized workflows, as noted in client feedback.",
-        "Currently adapting my program to the Electron framework, shifting from Python to JavaScript, Node.js, and React.",
         "Analyzed test data to identify and diagnose software issues, ensuring efficient troubleshooting and resolution.",
         "Created PowerShell scripts to automate installation and application processes, improving time efficiency by 40%.",
         "Conducted functional testing on C++ simulation software to ensure accurate and reliable real-time data processing.",
         "Applied software engineering principles to real-world scenarios, adhering to company protocols and OOP standards.",
+        "Gained hands-on experience with the SDLC, focusing on implementation and testing of various development practices.",
         "Integrated C++ code with third-party software, ensuring seamless application performance and reliability.",
       ],
     },
@@ -192,12 +180,12 @@ import {
   const certificates = [
     {
       name:"IEEE CSTMC’s 2023-2024 Software Fundamentals Workshop",
-      description: "Completed the IEEE CSTMC Software Fundamental Workshop",
+      description: "Completed the IEEE CSTMC Software Fundamentals Workshop, gaining hands-on experience with essential technologies and programming languages, including Unix, Python, SQL, and Git.",
       image: ieee,
     },
     {
-      name:"C++ course",
-      description: "Completed 30hr course dealing with C++",
+      name:"Professional C++ Programming Course",
+      description: "Completed an in-depth course covering foundational to advanced concepts in C++ programming, with a focus on practical application and software development techniques.",
       image: udemy,
     },
   ];
@@ -225,7 +213,7 @@ import {
     },
     {
       name:"Blue jays - Employee of the Month",
-      description: "Recognition for exceptional performance during the month in August 2023",
+      description: "Recognition for my exceptional performance as Employee of the Month in August 2023",
       image: stadiumstar,
     },
   ]
@@ -259,6 +247,23 @@ import {
       source_code_link: "https://github.com/MasterPancho/Atari-Pong-Game/tree/main",
     },
     {
+      name: "Weather Data Analysis",
+      description:
+        "This program uses various functions to analyze daily surface data from the database of the National Oceanic and Atmospheric Administration.",
+      tags: [
+        {
+          name: "c",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "geany",
+          color: "green-text-gradient",
+        },
+      ],
+      image: weather,
+      source_code_link: "https://github.com/MasterPancho/Weather-Data-Analysis/tree/main",
+    },
+    {
       name: "Bookstore Application",
       description:
         "An application with functionalities for administrators and customers. Logging in as an admin enables the addition or removal of books and customers from the app. In contrast, logging in as a customer allows for purchasing books only.",
@@ -278,23 +283,6 @@ import {
       ],
       image: bookstore,
       source_code_link: "https://github.com/MasterPancho/Book-Store-Application/tree/main",
-    },
-    {
-      name: "Weather Data Analysis",
-      description:
-        "This program uses various functions to analyze daily surface data from the database of the National Oceanic and Atmospheric Administration.",
-      tags: [
-        {
-          name: "c",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "geany",
-          color: "green-text-gradient",
-        },
-      ],
-      image: weather,
-      source_code_link: "https://github.com/MasterPancho/Weather-Data-Analysis/tree/main",
     },
   ];
   

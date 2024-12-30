@@ -1,11 +1,12 @@
 import logo from "./logo.svg";
-import backend from "./backend.png";
-import softdev from "./softdev.png";
-import gpa from "./gpa.png";
-import graduation from "./graduation.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+
+import language from "./medals/language.png";
+import softdev from "./medals/softdev.png";
+import gpa from "./medals/gpa.png";
+import graduation from "./medals/graduation.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -49,14 +50,14 @@ import dean2024 from "./achievements/awards/dean2024.png"
 
 export {
   logo,
-  backend,
-  softdev,
-  gpa,
-  graduation,
   github,
   github_dark,
   menu,
   close,
+  language,
+  softdev,
+  gpa,
+  graduation,
   css,
   docker,
   git,
