@@ -9,10 +9,9 @@ import Earth from './canvas/Earth';
 
 //Creates an email and sends it to mine.
 const Contact = () => {
-
-  const API_KEY=process.env.REACT_APP_EMAILJS_SERVICE_ID;
-  const TEMPLATE=process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
-  const ID=process.env.REACT_APP_EMAILJS_USER_ID;
+  const API_KEY = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const TEMPLATE = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+  const ID = import.meta.env.VITE_EMAILJS_USER_ID;
 
   const formRef = useRef();                                   //A reference to the form object
   const [form, setForm] = useState({
