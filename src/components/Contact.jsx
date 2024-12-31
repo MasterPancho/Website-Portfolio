@@ -9,6 +9,11 @@ import Earth from './canvas/Earth';
 
 //Creates an email and sends it to mine.
 const Contact = () => {
+
+  const API_KEY=process.env.REACT_APP_EMAILJS_SERVICE_ID;
+  const TEMPLATE=process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+  const ID=process.env.REACT_APP_EMAILJS_USER_ID;
+
   const formRef = useRef();                                   //A reference to the form object
   const [form, setForm] = useState({
     name: '',
@@ -40,17 +45,15 @@ const Contact = () => {
     setLoading(true);                                                          //loading set to true -> allows to disable the button
     
     emailjs.send(
-      'service_c7xivc8',                                                      //Service ID -> identifies as Gmail
-      'template_3mvmw7f',                                                     //Template ID -> template created in emailjs
+      API_KEY,                                                      //Service ID -> identifies as Gmail
+      TEMPLATE,                                                     //Template ID -> template created in emailjs
     {
-      //Template will be populated with the following data
+      //User information, which will be populated in the email
       from_name: form.name,                                                   
-      to_name: 'Miguel',
       from_email: form.email,
-      to_email: 'miguelvn13@gmail.com',
       message: form.message,
     },
-    'ayc1dggXS-18T5goI'
+    ID,
     )
     //After execution, bring everything back to default (empty boxes, not loading.)
     .then(() => {
