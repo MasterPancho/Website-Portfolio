@@ -1,11 +1,9 @@
-import {useSate, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
-import emailjs from '@emailjs/browser';       //Allows for people to send emails
 import { styles } from '../styles';
 import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
-import Earth from './canvas/Earth';
 
 //Creates an email and sends it to mine.
 const Contact = () => {
