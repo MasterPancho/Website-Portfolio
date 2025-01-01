@@ -9,9 +9,6 @@ import Earth from './canvas/Earth';
 
 //Creates an email and sends it to mine.
 const Contact = () => {
-  const API_KEY = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-  const TEMPLATE = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-  const ID = import.meta.env.VITE_EMAILJS_USER_ID;
 
   const formRef = useRef();                                   //A reference to the form object
   const [form, setForm] = useState({
@@ -29,7 +26,7 @@ const Contact = () => {
   }
 
   //Handles email interaction. "e" has the information from the section were the event was triggered.
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();                                                        //When user submits, it prevents page from refreshing
     
     // Regular Expression to validate email format
@@ -42,32 +39,42 @@ const Contact = () => {
     }
 
     setLoading(true);                                                          //loading set to true -> allows to disable the button
-    
-    emailjs.send(
-      API_KEY,                                                      //Service ID -> identifies as Gmail
-      TEMPLATE,                                                     //Template ID -> template created in emailjs
-    {
-      //User information, which will be populated in the email
-      from_name: form.name,                                                   
-      from_email: form.email,
-      message: form.message,
-    },
-      ID,
-    )
-    //After execution, bring everything back to default (empty boxes, not loading.)
-    .then(() => {
-      setLoading(false)                                                         //load is done
-      alert('Thank you! I will get back to you as soon as possible.');          
-      setForm({
-        name: '',
-        email:'',
-        message:'',
-      })
-    }, (error) => {
-      setLoading(false)                                                           //loading set to false -> button is enabled again
-      console.log(error);
-      alert('Something went wrong.')
-    })
+
+    try{
+      const response = await fetch('http://localhost:5000/send-email', {
+        method: 'POST',                                                         //Method to send the request
+        headers:{
+          'Content-Type': 'application/json',                                   //Type of data being sent
+        },
+        body: JSON.stringify({                                                  ////Converts the form data into a JSON string
+          name: form.name,
+          email: form.email,
+          message: form.message,
+        }),                                             
+      });
+
+      //If executed correctly, bring everything back to default (empty boxes, not loading.)
+      if(response.ok){
+        alert('Thank you! I will get back to you as soon as possible.');  
+        setForm({
+          name: '',
+          email:'',
+          message:'',
+        })
+      }
+      else{
+        const errorData = await response.json();                                //Display the error message
+        alert(errorData.error);
+      }
+    }
+    catch(e){
+      console.error('Error:', e);
+      alert('Something went wrong. Please try again.');
+    }
+
+    finally{
+      setLoading(false);                                                        //No matter what happens, loading is set to false -> button is enabled again
+    }
 }
 
   return (
