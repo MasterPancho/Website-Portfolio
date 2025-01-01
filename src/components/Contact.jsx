@@ -38,10 +38,12 @@ const Contact = () => {
       return;
     }
 
-    setLoading(true);                                                          //loading set to true -> allows to disable the button
+    setLoading(true);                                                           //loading set to true -> allows to disable the button
+
+    const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;                       //Gets the URL from the .env file
 
     try{
-      const response = await fetch('http://localhost:5000/send-email', {
+      const response = await fetch(`${BACKEND_URL}/send-email`, {
         method: 'POST',                                                         //Method to send the request
         headers:{
           'Content-Type': 'application/json',                                   //Type of data being sent
