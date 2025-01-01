@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://masterpancho.github.io/website-portfolio",
+  "homepage": "https://masterpancho.github.io/Website-Portfolio",
 
   "scripts": {
     "dev": "vite",
