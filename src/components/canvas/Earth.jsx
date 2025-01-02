@@ -38,7 +38,7 @@ const EarthCanvas = () => {
           maxPolarAngle={Math.PI /2}                                              //Only able to move it horizontally
           minPolarAngle={Math.PI /2}
         />                   
-        <Earth />                                                                 {/*Renders Earth model*/}                                        
+        <Earth />                                                                 Renders Earth model                                        
       </Suspense>     
     </Canvas>
 

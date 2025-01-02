@@ -3,6 +3,8 @@ import { Canvas } from '@react-three/fiber';                            //Allows
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei';    //Allows to draw on the canvas. useGLTF allows to import 3D models
 import CanvasLoader from '../Loader';
 
+useGLTF.preload('./desktop_pc/scene.gltf');
+
 {/*This component creates the 3D model of the computer*/}
 const Computers = ({ isMobile }) => {
   const computer = useGLTF('./desktop_pc/scene.gltf');                //Imports the 3D model of the computer
@@ -10,16 +12,16 @@ const Computers = ({ isMobile }) => {
     <mesh>                                          {/*Creates a mesh for the 3D model*/}
       {/*Creates the light for the scene*/}
       <hemisphereLight                              
-        intensity={3} 
+        intensity={2.5} 
         groundColor="black" 
       />
 
       {/*Adds the light on the screen*/}
-      <pointLight intensity={2}/>
+      <pointLight intensity={1.5}/>
       <spotLight
         position={[-20, 50, 10]}
         angle={0.12}
-        intensity={4}
+        intensity={3.5}
         penumbra={1}
         castShadow
         shadow-mapSize={1024}

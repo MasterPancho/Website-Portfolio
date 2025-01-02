@@ -22,7 +22,9 @@ const Ball = (props) => {
       >
         <icosahedronGeometry args={[1, 1]} />       {/*Creates ball texture*/}
         <meshStandardMaterial                       //Creates ball material
+          attach="material"
           color="#fff8eb"                           //Ball color (light beige)      
+          toneMapped={false}
           polygonOffset
           polygonOffsetFactor={-5}
           flatShading

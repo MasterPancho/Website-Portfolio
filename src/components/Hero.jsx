@@ -34,7 +34,7 @@ const Hero = () => {
           <div className= "w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             
             {/*Creates moving circle*/}
-            <motion.dev 
+            <motion.div 
               animate={{
                 y: [0, 24, 0]
               }}
