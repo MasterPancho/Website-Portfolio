@@ -16,11 +16,11 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState(false);                                //Controls the state for submitting a message.
 
-  //Updates the form state as the user writes on the box. "e" has the information from the section were the event was triggered.
+  //Updates the form state as the user writes on the box. "e" has the information from the section were the event was triggered. Ex: After typing: form={name:'Dave' email:'d@gmail.com' message:'hi'}
   const handleChange = (e) => {
     const { name, value } = e.target;                                           //Extract name and value from where the event was triggered.
     setForm({ ...form, [name]: value });                                        //Updates the form by spreading the existing values and replacing the one that matches the name with the new value
-                                                                                //Ex: After typing: form={name:'Dave' email:'d@gmail.com' message:'hi'}
+    
   }
 
   //Handles email interaction. "e" has the information from the section were the event was triggered.
@@ -41,7 +41,7 @@ const Contact = () => {
     const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;                       //Gets the URL from the .env file
 
     try{
-      const response = await fetch(`https://website-portfolio-csrn.onrender.com/send-email`, {
+      const response = await fetch(`${BACKEND_URL}/send-email`, {
         method: 'POST',                                                         //Method to send the request
         headers:{
           'Content-Type': 'application/json',                                   //Type of data being sent
