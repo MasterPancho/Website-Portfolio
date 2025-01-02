@@ -30,7 +30,6 @@ const App = () => {
         <div className="relative z-10">
           <Achievements />
         </div>
-        {/* <Feedbacks /> */}
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />
