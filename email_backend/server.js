@@ -6,7 +6,7 @@ require('dotenv').config();                                                     
 const app = express();                  
 const PORT = process.env.PORT || 5000;                                          //Port the server will listen on. Else, it will default to 5000 (when it runs locally for instance)
             
-app.use(cors());                                                                //Allows for requests from different domains (in this case the frontend Github Pages)       
+app.use(cors({origin: 'https://masterpancho.github.io'}));                      //Allows for requests from Github Pages domain            
 app.use(express.json());                                                        //Middleware to parse incoming data raquests with JSON payloads (user info). Use req.body to handle this data
             
 //POST route at /send-email to handle sending email requests            
@@ -52,5 +52,5 @@ app.post('/send-email', async (req, res) => {                                   
 
 //Starts server on the specified PORT 
 app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
+    console.log(`Server is running on this host: http://localhost:${PORT}`);
 });
