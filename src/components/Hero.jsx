@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
-import { ComputersCanvas } from './canvas';
+import portrait from '../assets/portrait.png';
 
-//This component creates the title design of the website, as well as invoking the 3D model of the computer 
+//This component creates the title design of the website, a self-portrait, and a moving circle that redirects to the "about" section
 const Hero = () => {
   return (
     <section className="relative w-full h-screen mx-auto">                                                                  {/*Fixes background image to the screen*/}
-      <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>  {/*Padding on the x axis, absolute positioning, max width of 7xl, center aligned*/}
+      <div className={`${styles.paddingX} absolute inset-0 top-[140px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>  {/*Padding on the x axis, absolute positioning, max width of 7xl, center aligned*/}
         
         {/*Creates circle & Gradient line aligned on the left side of the screen*/}
         <div className="flex flex-col justify-center items-center mt-5">
@@ -23,8 +23,14 @@ const Hero = () => {
         </div>
       </div>
 
-      {/*Invokes the 3D model of the computer*/}
-      <ComputersCanvas />
+      {/*Adds self-portrait*/}
+      <div className="absolute inset-0 flex justify-center items-center">
+        <img
+          src={portrait}
+          alt="me"
+          className="object-contain h-full w-full"
+        />
+      </div>
 
       {/*Creates a constantly moving circle that redirects to the "about" section*/}
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">

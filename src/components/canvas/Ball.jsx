@@ -9,12 +9,11 @@ const Ball = (props) => {
   
   return (
     <Float 
-      speed={1.75}                                  //Rotation speed
+      speed={1.5}                                  //Rotation speed
       rotationIntensity={1}                         //Rotation intensity
       floatIntensity={2}                            //Float intensity   
     >
-      <ambientLight intensity={2}/>                   {/*Ball Brightness*/}
-      <directionalLight position={[0, 0, 0.05]} />    {/*Ball Light Position*/}
+      <hemisphereLight intensity={3} groundColor="white" />
       <mesh
         castShadow                                       //Objects can cast and recieve shadows
         receiveShadow                                          
@@ -24,22 +23,17 @@ const Ball = (props) => {
         <meshStandardMaterial                       //Creates ball material
           attach="material"
           color="#fff8eb"                           //Ball color (light beige)      
-          toneMapped={false}
-          polygonOffset
-          polygonOffsetFactor={-5}
           flatShading
         />
 
         {/* Adds image to the ball */}
         <Decal 
           position={[0, 0, 1]}
-          rotation={[2*Math.PI, 0, 6.25]}
-          flatShading
+          rotation={[0, 0, 0]}
           map={decal}
           scale={0.7}
         />
       </mesh>
-    
     </Float>
   )
 }
@@ -49,7 +43,7 @@ const BallCanvas = ({ icon }) => {
   return(
     <Canvas 
       frameloop="always"                                                  //Have the ball render every time
-      gl={{preserveDrawingBuffer: true}}                                  //Ensures the canvas keeps the image drawn after rendering
+      gl={{antialias: false, preserveDrawingBuffer: true}}                //Ensures the canvas keeps the image drawn after rendering
     >
       <Suspense fallback={<CanvasLoader />}>                              {/*Shows the loader while the 3D model is loading*/}
         <OrbitControls enableZoom={false}/>
