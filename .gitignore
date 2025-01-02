@@ -30,3 +30,9 @@ Thumbs.db
 public/draco/
 *.gltf
 *.glb
+
+# Specific file types
+*.png
+*.jpg
+*.jpeg
+*.webp

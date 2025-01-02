@@ -6,7 +6,7 @@ import portrait from '../assets/portrait.png';
 const Hero = () => {
   return (
     <section className="relative w-full h-screen mx-auto">                                                                  {/*Fixes background image to the screen*/}
-      <div className={`${styles.paddingX} absolute inset-0 top-[140px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>  {/*Padding on the x axis, absolute positioning, max width of 7xl, center aligned*/}
+      <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>  {/*Padding on the x axis, absolute positioning, max width of 7xl, center aligned*/}
         
         {/*Creates circle & Gradient line aligned on the left side of the screen*/}
         <div className="flex flex-col justify-center items-center mt-5">
@@ -17,8 +17,8 @@ const Hero = () => {
         {/*Title and subtext with a predefined style in styles.js*/}
         <div>
           <h1 className={`${styles.heroHeadText}`}>Hello, I am <span className="text-[#915eff]"> Miguel </span></h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}> A 3rd year Software Engineer Student 
-            <br className="sm:block hidden"/> currently on an Internship at Hitachi Rail in Canada 
+          <p className={`${styles.heroSubText} mt-2 text-white-100`}> A third-year Software Engineering student,
+            <br className="sm:block hidden"/>  currently interning at Hitachi Rail in Canada. 
           </p>
         </div>
       </div>

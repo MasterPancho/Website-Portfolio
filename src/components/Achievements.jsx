@@ -97,7 +97,7 @@ const AchievementCard = ( { name, description, image, onNext, onPrev} ) => {
   )}
 
 // This component allows for modularity. Choose between "certificates" array, and "awards".
-const AchievementCarousel = ({data, title}) => {
+const AchievementCarousel = ({data}) => {
 
   const [curIndex, setIndex] = useState(0);
 
