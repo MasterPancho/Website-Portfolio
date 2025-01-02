@@ -41,7 +41,7 @@ const Contact = () => {
     const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;                       //Gets the URL from the .env file
 
     try{
-      const response = await fetch(`${BACKEND_URL}/send-email`, {
+      const response = await fetch(`https://website-portfolio-csrn.onrender.com/send-email`, {
         method: 'POST',                                                         //Method to send the request
         headers:{
           'Content-Type': 'application/json',                                   //Type of data being sent
