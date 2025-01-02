@@ -5,7 +5,7 @@ import CanvasLoader from '../Loader';
 
 {/*Creates the Earth 3D model*/}
 const Earth = () => {
-  const earth = useGLTF('./planet/scene.gltf')
+  const earth = useGLTF('./planet/scene-optimized.glb', '/draco/'); // Use optimized model
   return (
     <primitive 
       object={earth.scene}                      //Invokes 3D model
@@ -33,18 +33,15 @@ const EarthCanvas = () => {
     >
       <Suspense fallback={<CanvasLoader />}>                                      {/*Ensures that while the model is loading, we show the loader*/}
         <OrbitControls                                                            //Allows to move Earth with mouse
-          autoRotate                                                              //Rotates by itself
+          autoRotate
           enableZoom={false}                                                      //Cannot zoom in/out 
           maxPolarAngle={Math.PI /2}                                              //Only able to move it horizontally
           minPolarAngle={Math.PI /2}
         />                   
-        <Earth />                                                                 Renders Earth model                                        
+        <Earth />                                                                 {/*Renders Earth model*/}                                        
       </Suspense>     
     </Canvas>
-
-
   )
-
-
 }
+
 export default EarthCanvas
