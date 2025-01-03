@@ -6,7 +6,7 @@ import portrait from '../assets/portrait.png';
 const Hero = () => {
   return (
     <section className="relative w-full h-screen mx-auto">                                                                  {/*Fixes background image to the screen*/}
-      <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>  {/*Padding on the x axis, absolute positioning, max width of 7xl, center aligned*/}
+      <div className={`${styles.paddingX} absolute inset-0 top-[100px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>  {/*Padding on the x axis, absolute positioning, max width of 7xl, center aligned*/}
         
         {/*Creates circle & Gradient line aligned on the left side of the screen*/}
         <div className="flex flex-col justify-center items-center mt-5">
@@ -24,16 +24,16 @@ const Hero = () => {
       </div>
 
       {/*Adds self-portrait*/}
-      <div className="absolute inset-0 flex justify-center items-center">
+      <div className="absolute inset-x-0 bottom-0 flex justify-center items-end">
         <img
           src={portrait}
           alt="me"
-          className="object-contain h-full w-full"
+          className="2xl:w-[33%] xl:w-[30%] lg:w-[27%] w-[500px]" // bg-red-500 sm:bg-green-500 md:bg-blue-500 lg:bg-yellow-500 xl:bg-purple-500  2xl:bg-orange-500"
         />
       </div>
 
       {/*Creates a constantly moving circle that redirects to the "about" section*/}
-      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+      <div className="absolute bottom-10 w-full flex justify-center items-center">
         <a href="#about">                                                                               {/*#about -> Browser interprets this as: Find element in page with id=about, then go to that location*/}                  
 
           {/*Creates container for the circle*/}

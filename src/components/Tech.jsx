@@ -11,7 +11,7 @@ const Tech = () => {
         <h1 className={`${styles.sectionHeadText}`}>Technical Skills</h1>
         <div className="flex flex-row flex-wrap justify-center gap-12 w-[450px]">
           {technologies.map((technology) => (
-            <div className="w-28 h-28" key={technology.name}>
+            <div className="w-24 h-24" key={technology.name}>
               <BallCanvas icon={technology.icon} />
             </div>
           ))}
@@ -22,7 +22,7 @@ const Tech = () => {
         <h1 className={`${styles.sectionHeadText} !text-[#915eff] text-[#915eff]`}>Environments</h1>
         <div className="flex flex-row flex-wrap justify-center gap-12 w-[450px]">
         {environments.map((environment) => (
-          <div className="w-24 h-24 bg-white p-2 rounded-full flex items-center justify-center" key={environment.name}>
+          <div className="w-20 h-20 bg-white p-2 rounded-full flex items-center justify-center" key={environment.name}>
             <img
               src={environment.icon}
               alt={environment.name}

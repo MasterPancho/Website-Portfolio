@@ -6,7 +6,7 @@ import herobg from './assets/herobg.webm'; // Import the video
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="relative z-0 bg-primary">
+      <div className="relative z-0 bg-primary overflow-x-hidden">
         
         {/* Video background container */}
         <div className="relative">
@@ -16,9 +16,10 @@ const App = () => {
             autoPlay
             loop
             muted
+            playsInline       //To make the video play on Iphone
           ></video>
 
-          <div className="relative z-20">
+          <div className="relative z-20 overflow-hidden">
             <Navbar />
             <Hero />
           </div>

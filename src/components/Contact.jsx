@@ -129,7 +129,7 @@ const Contact = () => {
               value={form.message}                                                             //Stores the message written by the user
               onChange={handleChange}
               placeholder="What do you want to say?"
-              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium'    //Modifies design of box + adds placeholder
+              className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium resize-none'    //Modifies design of box + adds placeholder
             />
           </label>
 
