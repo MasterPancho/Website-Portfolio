@@ -28,7 +28,7 @@ const Hero = () => {
         <img
           src={portrait}
           alt="me"
-          className="2xl:w-[33%] xl:w-[30%] lg:w-[27%] w-[500px]" // bg-red-500 sm:bg-green-500 md:bg-blue-500 lg:bg-yellow-500 xl:bg-purple-500  2xl:bg-orange-500"
+          className="2xl:w-[33%] xl:w-[30%] lg:w-[27%] w-[500px]"
         />
       </div>
 
