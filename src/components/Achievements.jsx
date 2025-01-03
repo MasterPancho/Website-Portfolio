@@ -36,7 +36,7 @@ const AchievementCard = ( { name, description, image, onNext, onPrev} ) => {
         <Tilt options={{max: 10, scale:1, speed:450}}>
           
           {/* Create the card design */}
-          <div className="bg-tertiary p-5 rounded-2xl sm:w-[550px] w-full sm:h-[550px] h-full">   {/*For small to large screens, use 360px. for smaller, use the whole screen*/}
+          <div className="bg-tertiary p-5 rounded-2xl sm:w-[550px] w-full sm:h-[550px] h-full">   {/*For small to large screens, use 550px. for smaller, use the whole screen*/}
             
             {/* Add the details inside the card */}
             <div className="relative w-full h-[350px] cursor-pointer">     {/*Any child element inside the group will be affected by the parent's state. Ex: If parent is hovered over, children will be affected.*/}
