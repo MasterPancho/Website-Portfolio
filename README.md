@@ -34,7 +34,7 @@ git clone https://github.com/MasterPancho/Website-Portfolio.git
 ```
 **Navigate to the project directory**
 ```bash
-cd your-repo
+cd Website-Portfolio
 ```
 **Install dependencies**
 ```bash
