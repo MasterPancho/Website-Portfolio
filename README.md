@@ -24,7 +24,7 @@ Feel free to explore, discover my work, and connect through the contact section!
 - **Vite:** A fast and modern build tool for better performance.
 - **Three.js:** For creating engaging 3D visuals and models.
 - **TailwindCSS:** For styling the website with a modern and consistent design.
-- **Render Backend Service:** To manage backend functionalities, including POST requests for the contact form.
+- **Node.js Backend Service:** To manage backend functionalities, including POST requests for the contact form. This service runs in Render.
 - **GitHub Pages:** For hosting the website and ensuring easy access.
 
 ## Installation Instructions
