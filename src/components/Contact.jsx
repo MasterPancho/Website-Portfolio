@@ -79,7 +79,7 @@ const Contact = () => {
 
   return (
     //Controls the Contact section between the 3D model and the boxes
-    <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
+    <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden"> 
       <motion.div
         variants={slideIn('left','tween', 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"                                //Creates the section background
@@ -87,7 +87,10 @@ const Contact = () => {
         {/*Creates title and subtext*/}
         <p className={styles.sectionSubText}>Get In Touch</p>
         <h3 className={styles.sectionHeadText}>Contact</h3>
-        
+        <div className='text-secondary'>
+          NOTE: After a period of inactivity, the backend service may experience delays of up to 
+          a minute when processing requests. Please be patient while the request is fulfilled.
+        </div>
         {/*Creates/Adjusts the different input boxes*/}
         <form
           ref={formRef}                                                                    //ref attribute is assigned to the "form" Element
