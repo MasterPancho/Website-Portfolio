@@ -7,7 +7,7 @@ import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
 
 {/*This component creates different cards that display the services with a respective image*/}
-const ServiceCard = ({ index, title, icon }) => {
+const ServiceCard = ({ index, title, content, icon }) => {
   return(
     
     //Adds tilting effect
@@ -25,7 +25,7 @@ const ServiceCard = ({ index, title, icon }) => {
           className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[300px] flex justify-evenly items-center flex-col"   //Adds dark colour, adjusts and centers images and text
         >
           <img src={icon} alt={title} className="w-28 h-28 object-contain"/>                          {/*Adds images + adjusts its size*/}          
-          <h3 className="text-white text-[20px] font-bold text-center">{title}</h3>                   {/*Adds text + adjusts its size*/}     
+          <h3 className="text-white text-[20px] font-bold text-center">{title}<br/>{content}</h3>                   {/*Adds text + adjusts its size*/}     
         </div>
       </motion.div>
     </Tilt>
