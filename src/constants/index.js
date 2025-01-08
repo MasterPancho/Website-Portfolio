@@ -60,18 +60,23 @@ import {
   const services = [
     {
       title: "Software Developer",
+      content: null,
       icon: softdev,
     },
     {
       title: "English & Spanish",
+      content: null,
       icon: language,
     },
     {
-      title: "Graduation: May 2026",
+      title: "Graduation: ",
+      content: "May 2026",
       icon: graduation,
+
     },
     {
-      title: "GPA: 3.80/4.00",
+      title: "GPA: ",
+      content: "4.11/4.33",
       icon: gpa,
     },
   ];
@@ -137,12 +142,12 @@ import {
       icon: vscode,
     },
     {
-      name: "docker",
-      icon: docker,
+      name: "nodejs",
+      icon: nodejs,
     },
     {
-      name: "Kubernetes",
-      icon: kubernetes,
+      name: "docker",
+      icon: docker,
     },
   ];
 
@@ -154,10 +159,11 @@ import {
       iconBg: "#05255c",//#383E56",      
       date: "Summer 2022; Summer 2023",
       points: [
-        "Ensured a positive and safe environment for the fans by enforcing the stadium policies and procedures.", 
-        "Collaborated with staff to maintain crowd control, promptly resolve issues, and build a productive work environment.",
+        "Ensured a secure and enjoyable experience for fans through consistent implementation of stadium policies.",
+        "Collaborated with staff to coordinate crowd control efforts, fostering collaboration and a smooth event experience.",
+        "Responded effectively to unexpected challenges, delivering high-quality support to both fans and staff.",
         "Recognized for great performance with a Golden Pin in the 2022 season, and Employee of the Month in August 2023.",
-      ],
+        ],
     },
     {
       title: "Software Analyst Internship",
@@ -166,13 +172,10 @@ import {
       iconBg: "#F2ECEB",
       date: "June 2024 - Current",
       points: [
-        "Developed an OOP-based Python solution to configure and automate the setup of a device's DHCP server, enhancing reliability and improving user-friendliness. This tool significantly optimized workflows, as noted in client feedback.",
-        "Analyzed test data to identify and diagnose software issues, ensuring efficient troubleshooting and resolution.",
+        "Developed an OOP-based Python tool to automate DHCP server setup, optimizing reliability and workflows with positive client feedback.",
         "Created PowerShell scripts to automate installation and application processes, improving time efficiency by 40%.",
-        "Conducted functional testing on C++ simulation software to ensure accurate and reliable real-time data processing.",
-        "Applied software engineering principles to real-world scenarios, adhering to company protocols and OOP standards.",
-        "Gained hands-on experience with the SDLC, focusing on implementation and testing of various development practices.",
-        "Integrated C++ code with third-party software, ensuring seamless application performance and reliability.",
+        "Integrated and tested C++ code with third-party software, ensuring accurate simulation outputs and seamless application performance.",
+        "Adapted quickly to dynamic project requirements, collaborating with teams to apply software engineering principles and deliver high-quality solutions within tight deadlines."
       ],
     },
   ];
