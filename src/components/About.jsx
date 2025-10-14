@@ -47,10 +47,10 @@ const About = () => {
       variants={fadeIn("", "", 0.1, 1)}                                                 //Allows for the text to appear after the title               
       className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"              //Adjusts the text size and line height
       >
-        I am a third-year Software Engineering student at Toronto Metropolitan University with 
+        I am a 4th year Software Engineering student at Toronto Metropolitan University with 
         a strong passion for technology and innovation. I am focused on learning and applying 
         software development principles to create practical and impactful solutions. 
-        Through my studies and projects, I have gained valuable skills in programming, 
+        Through my internship and studies, I have gained valuable skills in programming, 
         problem-solving, and system design, which motivate me to continue exploring new challenges 
         and opportunities in the tech industry.
       </motion.p>
