@@ -170,7 +170,7 @@ import {
       company_name: "Hitachi Rail",
       icon: hitachi,
       iconBg: "#F2ECEB",
-      date: "June 2024 - Current",
+      date: "June 2024 - August 2024 (12-month + extension)",
       points: [
         "Developed an OOP-based Python tool to automate DHCP server setup, optimizing reliability and workflows with positive client feedback.",
         "Created PowerShell scripts to automate installation and application processes, improving time efficiency by 40%.",
