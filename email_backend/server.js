@@ -1,9 +1,10 @@
-const nodemailer = require('nodemailer');                                       //Module to send emails from the server
+const { Resend } = require('resend');                                           //Library to send emails using Resend service                           
 const express = require('express');                                             //Simplify process of building web servers (handle HTTP request, routes, middleware...)     
 const cors = require('cors');                                                   //Allows for cross-origin resource sharing (CORS) in the server (requests from different domains)
 const validator = require('validator');                                         //To validate and sanitize user inputs
 require('dotenv').config();                                                     //Load environment variables from a .env file into process.env
-            
+
+const resend = new Resend(process.env.RESEND_API_KEY);                                                  //Resend with API key
 const app = express();                  
 const PORT = process.env.PORT                                                   //Port the server will listen on. Else, it will default to 5000 (when it runs locally for instance)
 
@@ -29,37 +30,66 @@ app.post('/send-email', async (req, res) => {                                   
     const sanitizedMessage = validator.escape(message);
 
     try{
-        //Configure how the email will be sent
-        const transporter = nodemailer.createTransport({
-            service: 'gmail',                                                  // Use Gmail as the SMTP service
-            auth: {
-                user: process.env.GMAIL_USER,                                 
-                pass: process.env.GMAIL_PASS,                                 
-            },
+        await resend.emails.send({
+            from: 'Contact Form <onboarding@resend.dev>',
+            to: process.env.GMAIL_USER,
+            subject: `New message from ${sanitizedName} (${sanitizedEmail})`,
+            html: `<p><strong>Name:</strong> ${sanitizedName}</p>
+                   <p><strong>Email:</strong> ${sanitizedEmail}</p>
+                   <p><strong>Message:</strong> ${sanitizedMessage}</p>`,
         });
-
-        //Configures email details
-        const mailOptions = {
-            from: process.env.GMAIL_USER,                                           //Sender's email
-            to: process.env.GMAIL_USER,                                             //Recipient's email
-            subject: `New message from ${sanitizedName} (${sanitizedEmail})`,       //Email subject
-            text: `You have a new contact form submission:
-                Name: ${sanitizedName}
-                Email: ${sanitizedEmail}
-                Message: ${sanitizedMessage}`
-        };
-
-        // Send the email
-        await transporter.sendMail(mailOptions);
-        res.status(200).json({message: 'Email sent successfully!'});                //res.status(200) -> Sends a success status code
+        res.status(200).json({message: 'Email sent successfully!'});              //res.status(200) -> Sends a success status code
     }
+
     catch (error){
         console.error('Error sending email:', error);
-        res.status(500).json({error: 'Failed to send email.'});                     //res.status(500) -> Sends an internal server error status code
+        res.status(500).json({error: 'Failed to send email.'});                 //res.status(500) -> Sends an internal server error status code
     }
 });
+
 
 //Starts server on the specified PORT 
 app.listen(PORT, () => {
     console.log(`Server is running on this host: http://localhost:${PORT}`);
 });
+
+
+
+
+
+
+
+
+
+
+
+// const nodemailer = require('nodemailer');                                       
+//     try{
+//         //Configure how the email will be sent
+//         const transporter = nodemailer.createTransport({
+//             service: 'gmail',                                                  // Use Gmail as the SMTP service
+//             auth: {
+//                 user: process.env.GMAIL_USER,                                 
+//                 pass: process.env.GMAIL_PASS,                                 
+//             },
+//         });
+
+//         //Configures email details
+//         const mailOptions = {
+//             from: process.env.GMAIL_USER,                                           //Sender's email
+//             to: process.env.GMAIL_USER,                                             //Recipient's email
+//             subject: `New message from ${sanitizedName} (${sanitizedEmail})`,       //Email subject
+//             text: `You have a new contact form submission:
+//                 Name: ${sanitizedName}
+//                 Email: ${sanitizedEmail}
+//                 Message: ${sanitizedMessage}`
+//         };
+
+//         // Send the email
+//         await transporter.sendMail(mailOptions);
+//         res.status(200).json({message: 'Email sent successfully!'});                //res.status(200) -> Sends a success status code
+//     }
+//     catch (error){
+//         console.error('Error sending email:', error);
+//         res.status(500).json({error: 'Failed to send email.'});                     //res.status(500) -> Sends an internal server error status code
+//     }
