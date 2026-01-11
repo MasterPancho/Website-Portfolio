@@ -31,7 +31,7 @@ app.post('/send-email', async (req, res) => {                                   
 
     try{
         await resend.emails.send({
-            from: 'Contact Form <onboarding@resend.dev>',
+            from: process.env.GMAIL_USER,
             to: process.env.GMAIL_USER,
             subject: `New message from ${sanitizedName} (${sanitizedEmail})`,
             html: `<p><strong>Name:</strong> ${sanitizedName}</p>
@@ -47,49 +47,7 @@ app.post('/send-email', async (req, res) => {                                   
     }
 });
 
-
 //Starts server on the specified PORT 
 app.listen(PORT, () => {
     console.log(`Server is running on this host: http://localhost:${PORT}`);
 });
-
-
-
-
-
-
-
-
-
-
-
-// const nodemailer = require('nodemailer');                                       
-//     try{
-//         //Configure how the email will be sent
-//         const transporter = nodemailer.createTransport({
-//             service: 'gmail',                                                  // Use Gmail as the SMTP service
-//             auth: {
-//                 user: process.env.GMAIL_USER,                                 
-//                 pass: process.env.GMAIL_PASS,                                 
-//             },
-//         });
-
-//         //Configures email details
-//         const mailOptions = {
-//             from: process.env.GMAIL_USER,                                           //Sender's email
-//             to: process.env.GMAIL_USER,                                             //Recipient's email
-//             subject: `New message from ${sanitizedName} (${sanitizedEmail})`,       //Email subject
-//             text: `You have a new contact form submission:
-//                 Name: ${sanitizedName}
-//                 Email: ${sanitizedEmail}
-//                 Message: ${sanitizedMessage}`
-//         };
-
-//         // Send the email
-//         await transporter.sendMail(mailOptions);
-//         res.status(200).json({message: 'Email sent successfully!'});                //res.status(200) -> Sends a success status code
-//     }
-//     catch (error){
-//         console.error('Error sending email:', error);
-//         res.status(500).json({error: 'Failed to send email.'});                     //res.status(500) -> Sends an internal server error status code
-//     }
