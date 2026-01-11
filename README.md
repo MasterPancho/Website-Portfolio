@@ -44,4 +44,6 @@ npm install
 ```bash
 npm run dev
 ```
-
+## Notes
+- The free version of Render introduces a delay of 50 seconds or more for POST requests made after a period of inactivity, potentially causing the contact information to take up to a minute to process. However, during active periods, emails are typically sent in under 5 seconds.
+- The image folders are currently missing. The images are configured in assets/index.js. You can update the paths in this file to point to your preferred directory structure.
