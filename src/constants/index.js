@@ -76,7 +76,7 @@ import {
     },
     {
       title: "GPA: ",
-      content: "4.11/4.33",
+      content: "4.12/4.33",
       icon: gpa,
     },
   ];
