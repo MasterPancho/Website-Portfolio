@@ -87,10 +87,10 @@ const Contact = () => {
         {/*Creates title and subtext*/}
         <p className={styles.sectionSubText}>Get In Touch</p>
         <h3 className={styles.sectionHeadText}>Contact</h3>
-        <div className='text-secondary'>
+        {/* <div className='text-secondary'>
           NOTE: After a period of inactivity, the backend service may experience delays of up to 
           a minute when processing requests. Please be patient while the request is fulfilled.
-        </div>
+        </div> */}
         {/*Creates/Adjusts the different input boxes*/}
         <form
           ref={formRef}                                                                    //ref attribute is assigned to the "form" Element
