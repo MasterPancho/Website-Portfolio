@@ -31,7 +31,7 @@ app.post('/send-email', async (req, res) => {                                   
 
     try{
         await resend.emails.send({
-            from: process.env.GMAIL_USER,
+            from: 'onboarding@resend.dev',
             to: process.env.GMAIL_USER,
             subject: `New message from ${sanitizedName} (${sanitizedEmail})`,
             html: `<p><strong>Name:</strong> ${sanitizedName}</p>
