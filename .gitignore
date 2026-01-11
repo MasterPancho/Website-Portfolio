@@ -31,9 +31,9 @@ public/draco/
 *.gltf
 *.glb
 
-# # Specific file types
-# *.png
-# *.jpg
-# *.jpeg
-# *.webp
+# Specific file types
+*.png
+*.jpg
+*.jpeg
+*.webp
 Feedback.jsx
