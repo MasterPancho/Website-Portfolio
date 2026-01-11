@@ -89,12 +89,18 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          I recreated the classic Atari Pong game using Python and Pygame, 
+          {/* I recreated the classic Atari Pong game using Python and Pygame, 
           incorporating real-time interactions, collision mechanics, and an intuitive UI. I also built 
           a C program to analyze NOAA data, creating functions to compute temperature metrics and display them in a 
           structured format. Additionally, I led a team in developing a Java-based bookstore application with JavaFX, applying OOP principles 
           and implementing features like login systems, book management, and customer interfaces. 
-          These experiences have strengthened my programming skills and ability to design practical, user-focused solutions.
+          These experiences have strengthened my programming skills and ability to design practical, user-focused solutions. */}
+
+          I developed a Python-based die detection application using OpenCV and Tkinter to capture and process images, applying multiple 
+          recognition methods including OCR, a CNN model, and GPT-4o to identify the number on the top face of a six-sided die. 
+          I also built a C program to analyze NOAA data, developing functions to compute temperature metrics and present results in a structured format. 
+          In addition, I recreated the classic Atari Pong game using Python and Pygame, incorporating real-time interactions, collision mechanics, and 
+          an intuitive user interface. These experiences have strengthened my programming skills and my ability to design practical, user-focused solutions.
         </motion.p>
       </div>
 

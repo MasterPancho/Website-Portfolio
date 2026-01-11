@@ -38,9 +38,11 @@ import hitachi from "./company/hitachi.webp";
 import atari from "./works/atari.webp";
 import bookstore from "./works/bookstore.webp";
 import weather from "./works/weather.webp";
+import dice from "./works/dice.webp";
 
 import ieee from "./achievements/certificates/ieee.png"
 import udemy from "./achievements/certificates/udemy.png"
+import hitachicoop from "./achievements/certificates/hitachicoop.png"
 
 import stadiumstar from "./achievements/awards/stadiumstar.png"
 import pokeith from "./achievements/awards/pokeith.png"
@@ -72,6 +74,7 @@ export {
   atari,
   bookstore,
   weather,
+  dice,
   cpp,
   c,
   java ,
@@ -87,6 +90,7 @@ export {
   vstudio,
   ieee,
   udemy,
+  hitachicoop,
   stadiumstar,
   pokeith,
   dean2022,
